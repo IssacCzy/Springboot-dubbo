@@ -1,5 +1,6 @@
 package org.spring.springboot;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +9,7 @@ import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 //开启基于注解的dubbo功能（主要是包扫描@DubboComponentScan）
 @EnableDubbo
 @SpringBootApplication
+@MapperScan("org.spring.springboot.dao")
 public class ServerApplication {
 
     public static void main(String[] args) {

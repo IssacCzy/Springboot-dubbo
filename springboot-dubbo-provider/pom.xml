@@ -41,6 +41,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Dubbo 依赖 Begin -->
 		<dependency>
 			<groupId>com.alibaba.spring.boot</groupId>
 			<artifactId>dubbo-spring-boot-starter</artifactId>
@@ -62,10 +64,33 @@
 			<artifactId>zkclient</artifactId>
 			<version>0.2</version>
 		</dependency>
+		<!-- Dubbo 依赖 End -->
+
+
+		<!-- DB 相关依赖 Begin -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!--阿里数据库连接池  -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.28</version>
+		</dependency>
+		<!-- SpringBoot集成mybatis框架  -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!-- DB 相关依赖 End -->
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
