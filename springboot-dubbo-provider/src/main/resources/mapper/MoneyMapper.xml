@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="org.spring.springboot.mapper.MoneyMapper">
+
+	<update id="update" parameterType="org.spring.springboot.domain.MoneyEntity">
+		update money_b set money_b.total=#{total}  where money_b.id=#{id}
+	</update>
+</mapper>

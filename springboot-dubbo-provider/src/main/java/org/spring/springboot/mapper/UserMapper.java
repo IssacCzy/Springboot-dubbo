@@ -1,11 +1,13 @@
-package org.spring.springboot.dao;
+package org.spring.springboot.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.spring.springboot.domain.UserEntity;
 
-public interface IUserDAO {
+@Mapper
+public interface UserMapper {
 	public UserEntity selectByUserName(@Param("username") String userName);
 
 	public int insertUser(UserEntity userEntity);

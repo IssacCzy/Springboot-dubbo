@@ -23,13 +23,15 @@ dubbo:
     
 mybatis: 
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.aruisi.ai.dto
+  type-aliases-package: org.spring.springboot.mapper
  
 ###数据库配置
 spring:
+  application:
+    name: springboot-dubbo-provider
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=UTC
     username: root
     password: root

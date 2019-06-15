@@ -2,15 +2,16 @@ package org.spring.springboot.service;
 
 import java.util.List;
 
-import org.spring.springboot.dao.IUserDAO;
 import org.spring.springboot.domain.UserEntity;
+import org.spring.springboot.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
-public class UserService implements IUserDAO{
+@Component
+public class UserService implements UserMapper{
 	@Autowired
-	private IUserDAO userMapper;
+	private UserMapper userMapper;
 	
 	@Override
 	public UserEntity selectByUserName(String username){
